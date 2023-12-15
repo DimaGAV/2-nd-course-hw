@@ -1,0 +1,33 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top {
+        background-image: url(img/topbg_mob.jpg);
+        height: 735px;
+    }
+
+    .title {
+        width: 100%;
+        text-align: center;
+        font-size: 32px;
+        padding-top: 239px;
+
+    }
+
+    .text {
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        line-height: 22px;
+
+        &_bold {
+            font-size: 14px;
+            line-height: 22px;
+
+        }
+    }
+
+}
