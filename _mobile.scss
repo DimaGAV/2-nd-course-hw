@@ -9,6 +9,13 @@
         height: 735px;
     }
 
+    .top {
+        display: flex;
+        gap: 33px;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .title {
         width: 100%;
         text-align: center;
@@ -26,7 +33,35 @@
         &_bold {
             font-size: 14px;
             line-height: 22px;
+        }
+    }
 
+    .top-button {
+        margin-top: 0;
+    }
+
+    .game {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        &__item{
+            width: 100%;
+        }
+
+        &__item_1 {
+            background-image: url(img/game1_mob.jpg);
+        }
+
+        &__item_2 {
+            background-image: url(img/game2_mob.jpg);
+        }
+
+        &__item_3 {
+            background-image: url(img/game3_mob.jpg);
+        }
+
+        &__text {
+            left: 16px;
         }
     }
 
