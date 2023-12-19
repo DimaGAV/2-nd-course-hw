@@ -4,7 +4,7 @@ alert(a);
 
 //Задание 2
 const firstIphone = 2007;
-alert Number(`Год выпуска первого IPhone - ${firstIphone}`);
+alert(`Год выпуска первого IPhone - ${firstIphone}`);
 
 //Задание 3
 let jsAutor = 'Brandan Eich';
@@ -31,14 +31,14 @@ let c = a % b;
 alert(`Остаток от деления 9 на 2 равен ${c}`);
 
 //Задание 7
-// let num = 1;
-// num = num + 5;
-// num = num - 3;
-// num = num * 7;
-// num = num / 3;
-// num = num + 1;
-// num = num - 1;
-// alert(num);
+let num = 1;
+num += 5;
+num -= 3;
+num *= 7
+num /= 3;
+num++;
+num--;
+alert(num);
 
 //Задание 8
 let age = prompt("Сколько вам лет?");
