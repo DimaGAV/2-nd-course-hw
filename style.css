@@ -18,6 +18,9 @@ body {
 }
 
 .top {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
   height: 1024px;
   background-image: url(img/topbg.jpg);
   background-size: cover;
@@ -26,7 +29,6 @@ body {
 }
 
 .title {
-  width: 788px;
   color: #FFF;
   font-size: 64px;
   font-style: normal;
@@ -42,8 +44,6 @@ body {
   font-style: normal;
   font-weight: 300;
   line-height: 32px;
-  margin-top: 32px;
-  margin-bottom: 44px;
 }
 
 .text_bold {
@@ -61,6 +61,7 @@ body {
   line-height: normal;
   border-radius: 30px;
   background: #9C0332;
+  margin-top: 12px;
 }
 .top-button:hover {
   background: #EB443F;
@@ -83,9 +84,6 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: 32px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   position: relative;
 }
 .game__item:hover {
@@ -104,4 +102,58 @@ body {
   position: absolute;
   left: 32px;
   bottom: 32px;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    background-image: url(img/topbg_mob.jpg);
+    height: 735px;
+    display: flex;
+    gap: 33px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .title {
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    padding-top: 239px;
+  }
+  .text {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .text_bold {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .top-button {
+    margin-top: 0;
+  }
+  .game {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+  .game__item {
+    width: 100%;
+  }
+  .game__item_1 {
+    background-image: url(img/game1_mob.jpg);
+  }
+  .game__item_2 {
+    background-image: url(img/game2_mob.jpg);
+  }
+  .game__item_3 {
+    background-image: url(img/game3_mob.jpg);
+  }
+  .game__text {
+    left: 16px;
+  }
 }/*# sourceMappingURL=style.css.map */
