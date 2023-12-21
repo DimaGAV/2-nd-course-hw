@@ -1,13 +1,15 @@
 //Задание 1
 let a = 10;
 alert(a);
+let a = 20;
+alert(a);
 
 //Задание 2
 const firstIphone = 2007;
 alert(`Год выпуска первого IPhone - ${firstIphone}`);
 
 //Задание 3
-let jsAutor = 'Brandan Eich';
+const jsAutor = 'Brandan Eich';
 alert(`Создатель языка JavaScript - это ${jsAutor}`);
 
 //Задание 4
