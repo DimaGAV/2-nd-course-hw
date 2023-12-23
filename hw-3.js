@@ -8,19 +8,16 @@ if (answer === password) {
 }
 
 //Задание 2
-let c = 2;
-if (c > 0 && c < 10) {
-    console.log("Верно");
-} else {
-    console.log("Неверно");
-}
+let c = Number(prompt("Введите любое число"));
+(c > 0 && c < 10) ? console.log("Верно") : console.log("Неверно");
 
 //Задание 3
 let d = 5;
 let e = 108;
 if (d > 100 || e > 100) {
     console.log("Верно");
-} else {
+}
+else {
     console.log("Неверно");
 }
 
@@ -69,17 +66,25 @@ if (isNaN(yourNumber)) {
 }
 
 //Задание 8
-let clientOS = prompt("Введите тип операционной системы Вашего устройства: Android или iOS").toLowerCase();
-if (clientOS === 'android') { console.log("Установите версию приложения для Android по ссылке") }
-else if (clientOS === 'ios') { console.log("Установите версию приложения для iOS по ссылке") }
+let clientOS = Number(prompt("Операционная система Вашего устройства. Введите: 0 - iOS, 1 - Android"));
+if (clientOS === 1) { console.log("Установите версию приложения для Android по ссылке") }
+else if (clientOS === 0) { console.log("Установите версию приложения для iOS по ссылке") }
 else { console.log("Некорректный ввод") };
 
 //Задание 9
-let clientOS = prompt("Введите тип операционной системы Вашего устройства: Android или iOS").toLowerCase();
-if (clientOS === 'android') { clientOS = 0 }
-else { clientOS = 1 };
-let clientDeviceYear = Number(prompt("Введите год производства своего устройства"));
-if (clientOS === 0 && clientDeviceYear > 2015) { console.log("Установите версию приложения для iOS по ссылке") }
-else { console.log("Установите облегчённую версию приложения для iOS по ссылке") };
-if (clientOS === 1 && clientDeviceYear > 2015) { console.log("Установите версию приложения для Android по ссылке") }
-else { console.log("Установите облегчённую версию приложения для Android по ссылке") }        
+let clientOS = Number(prompt("Операционная система Вашего устройства. Введите: 0 - iOS, 1 - Android"));
+let clientDeviceYear = Number(prompt("Введите год производства Вашего устройства"));
+if (clientOS === 0) {
+    if (clientDeviceYear > 2015) {
+        console.log("Установите версию приложения для iOS по ссылке")
+    } else {
+        console.log("Установите облегчённую версию приложения для iOS по ссылке")
+    }
+}
+else {
+    if (clientDeviceYear > 2015) {
+        console.log("Установите версию приложения для Android по ссылке")
+    } else {
+        console.log("Установите облегчённую версию приложения для Android по ссылке")
+    }
+}
