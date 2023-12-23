@@ -34,12 +34,30 @@ alert(a + b);
 //Задание 5
 let monthNumber = Number(prompt("Введите номер месяца"));
 switch (monthNumber) {
-    case ((monthNumber > 0 && monthNumber < 3) || monthNumber === 12):
+    case 1:
+    case 2:
+    case 12:
         console.log('Зима');
         break;
-    default: console.log('Ввели не то');
-        break
+    case 3:
+    case 4:
+    case 5:
+        console.log('Весна');
+        break;
+    case 6:
+    case 7:
+    case 8:
+        console.log('Лето');
+        break;
+    case 9:
+    case 10:
+    case 11:
+        console.log('Осень');
+        break;
+    default:
+        console.log('В году только 12 месяцев');
 }
+
 //Задание 7
 let yourNumber = prompt("Пожалуйста, введите любое целое число");
 if (isNaN(yourNumber)) {
@@ -60,8 +78,8 @@ else { console.log("Некорректный ввод") };
 let clientOS = prompt("Введите тип операционной системы Вашего устройства: Android или iOS").toLowerCase();
 if (clientOS === 'android') { clientOS = 0 }
 else { clientOS = 1 };
-let clientDeviceYear = prompt("Введите год производства своего устройства");
+let clientDeviceYear = Number(prompt("Введите год производства своего устройства"));
 if (clientOS === 0 && clientDeviceYear > 2015) { console.log("Установите версию приложения для iOS по ссылке") }
 else { console.log("Установите облегчённую версию приложения для iOS по ссылке") };
 if (clientOS === 1 && clientDeviceYear > 2015) { console.log("Установите версию приложения для Android по ссылке") }
-else { console.log("Установите облегчённую версию приложения для Android по ссылке") }
+else { console.log("Установите облегчённую версию приложения для Android по ссылке") }        
