@@ -8,8 +8,8 @@ if (answer === password) {
 }
 
 //Задание 2
-let c = Number(prompt("Введите любое число"));
-(c > 0 && c < 10) ? console.log("Верно") : console.log("Неверно");
+let c = Number(prompt("Введите любое число от 0 до 10"));
+(c > 0 && c < 10) ? console.log("Верно") : console.log("Неверно")
 
 //Задание 3
 let d = 5;
@@ -26,7 +26,7 @@ let a = '2';
 let b = '3';
 a = 2;
 b = 3;
-alert(a + b);
+alert(a + b)
 
 //Задание 5
 let monthNumber = Number(prompt("Введите номер месяца"));
@@ -69,7 +69,7 @@ if (isNaN(yourNumber)) {
 let clientOS = Number(prompt("Операционная система Вашего устройства. Введите: 0 - iOS, 1 - Android"));
 if (clientOS === 1) { console.log("Установите версию приложения для Android по ссылке") }
 else if (clientOS === 0) { console.log("Установите версию приложения для iOS по ссылке") }
-else { console.log("Некорректный ввод") };
+else { console.log("Некорректный ввод") }
 
 //Задание 9
 let clientOS = Number(prompt("Операционная система Вашего устройства. Введите: 0 - iOS, 1 - Android"));
