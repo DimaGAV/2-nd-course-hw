@@ -1,27 +1,27 @@
 //Задание 1
-let i=0;
-while (i<2) {
+let i = 0;
+while (i < 2) {
     console.log("Привет");
     i++;
 }
-        //или
+//или
 
-let i=1;
+let i = 1;
 do {
     console.log("Привет");
     i++;
-} while (i<=2);
+} while (i <= 2);
 
 //Задание 2
-let i=1;
-while (i<=5) {
+let i = 1;
+while (i <= 5) {
     console.log(i);
     i++;
 }
 
 //Задание 3
-let i=7;
-while (i<=22) {
+let i = 7;
+while (i <= 22) {
     console.log(i);
     i++;
 }
@@ -33,5 +33,18 @@ const obj = {
     Петя: 400
 };
 for (key in obj) {
-      console.log (`${key} - зарплата ${obj[key]} долларов`);      
+    console.log(`${key} - зарплата ${obj[key]} долларов`);
 }
+
+//Задание 5
+let n = 1000;
+let num = 0;
+do {
+    n = n / 2;
+    num++;
+} while (n > 50);
+console.log(`Полученное число ${n}`);
+console.log(`Количество итераций ${num}`);
+
+//Задание 6
+
