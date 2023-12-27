@@ -40,7 +40,7 @@ for (key in obj) {
 let n = 1000;
 let num = 0;
 do {
-    n = n / 2;
+    n /= 2;
     num++;
 } while (n > 50);
 console.log(`Полученное число ${n}`);
@@ -50,7 +50,13 @@ console.log(`Количество итераций ${num}`);
 let friday = 1;
 console.log(`Сегодня пятница, ${friday}-е число. Необходимо подготовить отчет.`);
 do {
-    friday = friday + 7;
+    friday += 7;
     console.log(`Сегодня пятница, ${friday}-е число. Необходимо подготовить отчет.`);
 } while (friday <= 24);
+//или
+let firstFriday = 6;
+for (let i=firstFriday; i<=31; i+=7)
+{
+    console.log(`Сегодня пятница, ${i}-е число. Необходимо подготовить отчет.`);
+}
 

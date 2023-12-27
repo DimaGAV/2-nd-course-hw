@@ -17,10 +17,12 @@ body {
   padding-right: calc(50% - 600px);
 }
 
-.top {
+.block {
   display: flex;
   flex-direction: column;
   gap: 32px;
+}
+.block_top {
   height: 1024px;
   background-image: url(img/topbg.jpg);
   background-size: cover;
@@ -36,6 +38,10 @@ body {
   line-height: normal;
   padding-top: 217px;
 }
+.title_game1 {
+  font-size: 48px;
+  padding-top: 0;
+}
 
 .text {
   width: 481px;
@@ -45,12 +51,14 @@ body {
   font-weight: 300;
   line-height: 32px;
 }
-
 .text_bold {
   font-weight: 700;
 }
+.text_card {
+  width: 588px;
+}
 
-.top-button {
+.button {
   width: 234px;
   height: 48px;
   color: #FFF;
@@ -63,7 +71,7 @@ body {
   background: #9C0332;
   margin-top: 12px;
 }
-.top-button:hover {
+.button:hover {
   background: #EB443F;
 }
 
@@ -85,9 +93,12 @@ body {
   font-weight: 600;
   line-height: 32px;
   position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .game__item:hover {
-  border: 3px solid #44D2FF;
+  outline: 3px solid #44D2FF;
 }
 .game__item_1 {
   background-image: url(img/game1.jpg);
@@ -104,24 +115,38 @@ body {
   bottom: 32px;
 }
 
+.game-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #000915;
+  padding-top: 282px;
+  padding-bottom: 282px;
+}
+
 @media (max-width: 767px) {
   .center {
     padding-left: 16px;
     padding-right: 16px;
   }
-  .top {
-    background-image: url(img/topbg_mob.jpg);
-    height: 735px;
+  .block {
     display: flex;
-    gap: 33px;
     flex-direction: column;
     align-items: center;
+  }
+  .block_top {
+    background-image: url(img/topbg_mob.jpg);
+    height: 735px;
   }
   .title {
     width: 100%;
     text-align: center;
     font-size: 32px;
     padding-top: 239px;
+  }
+  .title_game1 {
+    font-size: 32px;
+    padding-top: 0;
   }
   .text {
     width: 100%;
@@ -133,7 +158,7 @@ body {
     font-size: 14px;
     line-height: 22px;
   }
-  .top-button {
+  .button {
     margin-top: 0;
   }
   .game {
@@ -155,5 +180,15 @@ body {
   }
   .game__text {
     left: 16px;
+  }
+  .game-card {
+    flex-direction: column;
+    gap: 64px;
+    padding-top: 51px;
+    padding-bottom: 85px;
+  }
+  .game-img {
+    width: 344px;
+    height: 236px;
   }
 }/*# sourceMappingURL=style.css.map */
