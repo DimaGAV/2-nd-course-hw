@@ -18,21 +18,22 @@
         <h1 class="title">Добро пожаловать <br> на мой сайт !</h1>
         <p class="text">Вам предстоит пройти несколько увлекательных игр. Если готов, нажимай <span
                 class="text text_bold">поехали</span> и <span class="text text_bold">приступай</span></p>
-        <button class="button">Поехали!</button>
+        <button class="button" onclick="window.location.href='#games'">Поехали!</button>
     </section>
     <main>
         <nav class="game center">
-            <a class="game__item game__item_1" href="#"><span class="game__text">Игра 1</span></a>
+            <a name="games"></a>
+            <a class="game__item game__item_1" href="#game1"><span class="game__text">Игра 1</span></a>
             <a class="game__item game__item_2" href="#"><span class="game__text">Игра 2</span></a>
             <a class="game__item game__item_3" href="#"><span class="game__text">Игра 3</span></a>
         </nav>
         <article class="game-card center">
             <div class="block">
-                <h2 class="title title_game1">Времена года!</h2>
+                <h2 class="title title_game1"><a name="game1"></a>Времена года!</h2>
                 <p class="text text_card">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому
                     времени года
                     он относится</p>
-                <button class="button">Играть!</button>
+                <button onclick="seasons();" class="button">Играть!</button>
             </div>
             <div>
                 <svg class="game-img" width="485" height="334" viewBox="0 0 485 334" fill="none"
@@ -266,6 +267,7 @@
         </article>
 
     </main>
+    <script src="script.js"></script>
 </body>
 
 </html>

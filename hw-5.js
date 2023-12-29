@@ -1,5 +1,5 @@
 //Задание 1
-function min(a, b) {
+function minim(a, b) {
     if (a < b) {
         return a;
     } else {
@@ -7,7 +7,7 @@ function min(a, b) {
     }
 }
 
-min(5, 10);
+minim(5, 10);
 
 //Задание 2
 function parity() {
@@ -33,8 +33,7 @@ square1(e = prompt("Пожалуйста, введите любое число")
 
 //Задание 3.2
 let square2 = (g) => {
-    let result = g ** 2;
-    return result;
+    return g ** 2;
 }
 
 square2(g = prompt("Пожалуйста, введите любое число"));
@@ -80,7 +79,7 @@ function degree(userAnswer) {
     }
     else {
         let result1 = Math.pow(userAnswer, 3);
-        return `n в кубе равняется ${result1}`;
+        return `${userAnswer} в кубе равняется ${result1}`;
     }
 }
 
@@ -114,20 +113,4 @@ console.log(circle2.getArea());
 console.log(circle2.getPerimeter());
 
 //Задание 8
-function months(monthNumber) {
-    monthNumber = Number(prompt('Напиши номер месяца'));
-
-    if ((monthNumber > 0 && monthNumber < 3) || monthNumber === 12) {
-        return 'Зима';
-    } else if (monthNumber >= 3 && monthNumber <= 5) {
-        return 'Весна';
-    } else if (monthNumber >= 6 && monthNumber <= 8) {
-        return 'Лето';
-    } else if (monthNumber >= 9 && monthNumber <= 11) {
-        return 'Осень';
-    } else {
-        console.log('Введен некорректный номер месяца');
-    }
-}
-
-months();
+// см. script.js
