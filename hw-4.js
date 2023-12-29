@@ -6,24 +6,24 @@ while (i < 2) {
 }
 //или
 
-let i = 1;
+let c = 1;
 do {
     console.log("Привет");
-    i++;
-} while (i <= 2);
+    c++;
+} while (c <= 2);
 
 //Задание 2
-let i = 1;
-while (i <= 5) {
-    console.log(i);
-    i++;
+let b = 1;
+while (b <= 5) {
+    console.log(b);
+    b++;
 }
 
 //Задание 3
-let i = 7;
-while (i <= 22) {
-    console.log(i);
-    i++;
+let a = 7;
+while (a <= 22) {
+    console.log(a);
+    a++;
 }
 
 //Задание 4
@@ -32,7 +32,7 @@ const obj = {
     Вася: 300,
     Петя: 400
 };
-for (key in obj) {
+for (let key in obj) {
     console.log(`${key} - зарплата ${obj[key]} долларов`);
 }
 
