@@ -5,6 +5,7 @@
 
 a {
   text-decoration: none;
+  color: #FFF;
 }
 
 body {
@@ -68,6 +69,7 @@ body {
   font-weight: 400;
   line-height: normal;
   border-radius: 30px;
+  border: none;
   background: #9C0332;
   margin-top: 12px;
 }
