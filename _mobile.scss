@@ -21,7 +21,7 @@
         font-size: 32px;
         padding-top: 239px;
 
-        &_game1 {
+        &_game {
             font-size: 32px;
             padding-top: 0;
         }
@@ -76,6 +76,10 @@
         gap: 64px;
         padding-top: 51px;
         padding-bottom: 85px;
+        &_game2{
+            flex-direction: column-reverse;
+            padding-bottom: 90px;
+        }
     }
 
     .game-img {

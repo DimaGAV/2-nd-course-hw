@@ -42,7 +42,7 @@ body {
     line-height: normal;
     padding-top: 217px;
 
-    &_game1 {
+    &_game {
         font-size: 48px;
         padding-top: 0;
     }
@@ -63,6 +63,10 @@ body {
     &_card {
         width: 588px;
     }
+
+    &_card3 {
+        width: 1200px;
+    }
 }
 
 .button {
@@ -78,6 +82,10 @@ body {
     border: none;
     background: #9C0332;
     margin-top: 12px;
+
+    &_game3 {
+        align-self: center;
+    }
 
     &:hover {
         background: #EB443F;
@@ -135,11 +143,36 @@ body {
 
 .game-card {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     background: #000915;
     padding-top: 282px;
     padding-bottom: 282px;
+
+    &_game3 {
+        background-image: url(img/game3_bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+.right {
+    background: #000915;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.text-footer {
+    text-align: center;
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 @import 'mobile'
