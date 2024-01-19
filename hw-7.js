@@ -3,19 +3,17 @@ let str = 'js';
 console.log(str.toUpperCase());
 
 //Задание 2
-// let arr
-// function searchStart(arrStr, startStr) {
-//     // let startStr;
-//     const arrPosit = [];
-//     arrStr.forEach((el) => {
-//         if (el.toLowerCase().startsWith(startStr.toLowerCase())) {
-//             arrPosit.push(arrStr[el]);
-//             return arrPosit;
-//         }
-//     });
-// }
+function searchStart(arrStr, startStr) {
+    const arrPosit = [];
+    arrStr.forEach((el) => {
+        if (el.toLowerCase().startsWith(startStr.toLowerCase())) {
+            arrPosit.push(el);
+        }
+    });
+    return arrPosit;
+}
 
-// searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко');
+searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко');
 
 //Задание 3
 Math.floor(32.58884);
@@ -32,6 +30,18 @@ function getRandNum(min, max) {
 }
 
 getRandNum(1, 10);
+
+//Задание 6
+function getRandomArrNumbers(evenNum) {
+    const arrRandom = [];
+    for (let i = 0; i < Math.floor(evenNum / 2); i++) {
+        arrRandom[i] = Math.floor(Math.random() * 10);
+
+    }
+    return (arrRandom);
+}
+
+getRandomArrNumbers(15);
 
 //Задание 7
 function getWholeNum(firstValue, secondValue) {
@@ -53,5 +63,24 @@ let curDate = new Date();
 console.log(curDate);
 
 //Задание 9
-let currentDate9 = new Date();
-currentDate9.setDate(currentDate9.getDate() + 73);
+let dateNow = new Date();
+let dateNew = dateNow + (dateNow.setDate(dateNow.getDate() + 73) / 1000 / 60 / 60 / 24);
+console.log(dateNew);
+
+
+//Задание 10
+function getLongDate(myDate) {
+    myDate = new Date();
+    const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+    const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
+        "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+    const date = {
+        hours: myDate.getHours(),
+        minutes: myDate.getMinutes(),
+        seconds: myDate.getSeconds()
+    };
+    let fullDate = "Дата: " + myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + " - это " + days[myDate.getDay()] + " " + `Время: ${date.hours}:${date.minutes}:${date.seconds}`;
+    return fullDate
+}
+
+getLongDate(); 
