@@ -21,8 +21,8 @@ Math.ceil(32.58884);
 Math.round(32.58884);
 
 //Задание 4
-console.log(Math.min(52, 53, 49, 77, 21, 32));
-console.log(Math.max(52, 53, 49, 77, 21, 32));
+console.log(Math.min(52, 53, 49, 77, 21, 32), Math.max(52, 53, 49, 77, 21, 32));
+
 
 //Задание 5
 function getRandNum(min, max) {
@@ -74,13 +74,12 @@ function getLongDate(myDate) {
     const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
     const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
         "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
-    const date = {
-        hours: myDate.getHours(),
-        minutes: myDate.getMinutes(),
-        seconds: myDate.getSeconds()
-    };
-    let fullDate = "Дата: " + myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + " - это " + days[myDate.getDay()] + " " + `Время: ${date.hours}:${date.minutes}:${date.seconds}`;
+    let fullDate = "Дата: " + myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + " - это " + days[myDate.getDay()] + " " + "Время: " + myDate.getHours() + ":" + myDate.getMinutes() + ":" + myDate.getSeconds();
     return fullDate
 }
 
-getLongDate(); 
+getLongDate();
+
+
+//Задание 11
+// см. script.js

@@ -125,7 +125,6 @@ body {
 
 .game-card {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   background: #000915;
@@ -226,5 +225,10 @@ body {
   .game-img {
     width: 343px;
     height: 236px;
+  }
+}
+@media (min-width: 767px) {
+  .game-card {
+    flex-wrap: wrap;
   }
 }/*# sourceMappingURL=style.css.map */
