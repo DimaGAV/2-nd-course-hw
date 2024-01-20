@@ -64,16 +64,17 @@ console.log(curDate);
 
 //Задание 9
 let dateNow = new Date();
-let dateNew = dateNow + (dateNow.setDate(dateNow.getDate() + 73) / 1000 / 60 / 60 / 24);
-console.log(dateNew);
+dateNow.setDate(dateNow.getDate() + 73);
+
+console.log(dateNow)
 
 
 //Задание 10
 function getLongDate(myDate) {
     myDate = new Date();
     const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
-    const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
-        "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+    const months = ["Января", "Февраля", "Марта", "Апреля", "Мая", "Июня",
+        "Июля", "Августа", "Сентября", "Октября", "Ноября", "Декабря"];
     let fullDate = "Дата: " + myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + " - это " + days[myDate.getDay()] + " " + "Время: " + myDate.getHours() + ":" + myDate.getMinutes() + ":" + myDate.getSeconds();
     return fullDate
 }
