@@ -17,3 +17,22 @@ function seasons(monthNumber) {
         return 'Введен некорректный номер месяца';
     }
 }
+
+function guessFruits(fruitsArray) {
+    fruitsArray = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    fruitsArray = fruitsArray.sort(() => Math.random() - 0.5);
+    alert(fruitsArray);
+    let firstEl = prompt("Чему равнялся первый элемент массива?");
+    let lastEl = prompt("Чему равнялся последний элемент массива?");
+    if (/^\s*$/.test(firstEl) || /^\s*$/.test(lastEl)) {
+        alert("Один из элементов не был введен!");
+        return
+    };
+    if (fruitsArray[0].toLowerCase() === firstEl.toLowerCase() && fruitsArray[6].toLowerCase() === lastEl.toLowerCase()) {
+        alert("Поздравляем! Вы угадали оба элемента");
+    } else if (fruitsArray[0].toLowerCase() !== firstEl.toLowerCase() && fruitsArray[6].toLowerCase() !== lastEl.toLowerCase()) {
+        alert("К сожалению, Вы ответили неверно");
+    } else {
+        alert("Вы были близки к победе!");
+    }
+}
