@@ -222,6 +222,9 @@ body {
     flex-direction: column-reverse;
     padding-bottom: 90px;
   }
+  .game-card_game3 {
+    padding-bottom: 487px;
+  }
   .game-img {
     width: 343px;
     height: 236px;

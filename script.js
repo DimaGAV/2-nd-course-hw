@@ -25,7 +25,7 @@ function guessFruits(fruitsArray) {
     let firstEl = prompt("Чему равнялся первый элемент массива?");
     let lastEl = prompt("Чему равнялся последний элемент массива?");
     if (/^\s*$/.test(firstEl) || /^\s*$/.test(lastEl)) {
-        alert("Один из элементов не был введен!");
+        alert("Один или оба элемента не были введены!");
         return
     };
     if (fruitsArray[0].toLowerCase() === firstEl.toLowerCase() && fruitsArray[6].toLowerCase() === lastEl.toLowerCase()) {
